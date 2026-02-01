@@ -6,17 +6,19 @@ import "./Navbar.css";
 export function Navbar() {
   return (
     <nav className="navbar">
-      <NavLink className="navbar-title-link" to="/"> Bingo Home </NavLink>
+      <NavLink to="/" className={({ isActive }) =>
+          isActive ? "navbar-link navbar-link-active" : "navbar-link"
+        } > Bingo Home </NavLink>
 
       <ul className="navbar-ul-links">
         <li>
-          <NavLink className="navbar-link" to="/overall-items">Overall Items</NavLink>
+          <NavLink to="/overall-items" className="navbar-link" >Overall Items</NavLink>
         </li>
         <li>
-          <NavLink className="navbar-link" to="/card-1">Card #1</NavLink>
+          <NavLink to="/card-1" className="navbar-link">Card #1</NavLink>
         </li>
         <li>
-          <NavLink className="navbar-link" to="/card-2">Card #2</NavLink>
+          <NavLink to="/card-2" className="navbar-link">Card #2</NavLink>
         </li>
       </ul>
     </nav>

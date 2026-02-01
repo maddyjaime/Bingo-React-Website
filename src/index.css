@@ -1,3 +1,6 @@
+/* index.css*/
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -15,7 +18,9 @@
 
 a {
   font-weight: 500;
-  color: #ff6464;
+  color: #ff6464; /*default client side color typing in / url*/
+      /* when url / is typed: 
+        <a class="navbar-link active" href="/">Bingo Home</a> */
   text-decoration: inherit;
 }
 a:hover {

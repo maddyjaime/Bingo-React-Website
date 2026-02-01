@@ -34,15 +34,20 @@ h2.navbar-title {
   padding: 0;
 }
 
-.navbar-link {
+/* style for when link in navbar is clicked: .navbar-link */
+.navbar-link{
   text-decoration: none;
   color: #c8c9e6; /* initial color light purple blue*/
   font-weight: bold;
+  padding: 8px 14px;        /* makes hover box larger */
+  border-radius: 999px;    /* pill shape for hover highlight */
+  transition: all 0.2s ease-in-out; /*highlight color */
 }
 
+
 /* Add hover */
-.navbar-link a:hover, .navbar-links a:hover {
-  background-color: #ed1b53;
+.navbar-link:hover {
+  background-color: #87c8f4;
 }
 
 

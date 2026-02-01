@@ -7,9 +7,10 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css'
 
 import { Navbar } from "./components/navbar";
+import { OverallItems } from "./pages/OverallItems";
 import { BingoBoard } from "./components/BingoBoard";
 import { ItemList } from "./components/ItemList";
-import { OverallItems } from './pages/OverallItems';
+
 import { Card } from './pages/Card';
 
 function App() {
@@ -32,27 +33,22 @@ function App() {
   return (
     <>
       
-        {<Navbar/>}
+        <Navbar/>
            
 
         <Routes>
           <Route path="/" element={<h1>Home Page</h1>} />
-          <Route path="/overall-items" element={<OverallItems />} />
+          <Route path="/overall-items" element={
+            <OverallItems 
+                  list_of_tiles={list_of_tiles}
+                  selectedTiles={selectedTiles}
+                  setSelectedTiles={setSelectedTiles} />} />
           <Route path="/card-1" element={<Card />} />
           <Route path="/card-2" element={<Card />} />
         </Routes>
         
     
-        <h1>Bingo Below:</h1>
-      
-        <BingoBoard
-          tiles={list_of_tiles}
-          selectedTiles={selectedTiles}
-          setSelectedTiles={setSelectedTiles}
-        />
-
-
-        <ItemList items={list_of_tiles} setSelectedTiles={setSelectedTiles}/>
+        
         
      
     </>

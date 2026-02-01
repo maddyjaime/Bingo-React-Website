@@ -1,0 +1,16 @@
+.bingo-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    
+    margin: 0 auto; /* center the board */
+}
+
+.item-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centers items horizontally */
+    gap: 10px;
+    margin: 20px auto;
+}

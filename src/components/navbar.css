@@ -1,0 +1,46 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #190f9e; /* line */
+  background-color: #e3f2fd; /* light blue background */
+}
+
+/* 
+[ margin ][ border ][ padding ][ content ][ padding ][ border ][ margin ]
+*/
+h2.navbar-title {
+  margin: 0.85rem;
+  padding: auto;
+}
+
+
+
+.navbar-ul-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #c8c9e6; /* initial color navy blue*/
+  font-weight: bold;
+}
+
+/* Add hover */
+.navbar-link a:hover, .navbar-links a:hover {
+  background-color: #ed1b53;
+}
+
+
+.navbar-links a {
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}

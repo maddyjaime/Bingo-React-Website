@@ -1,0 +1,24 @@
+
+.bingo-tile {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border: 2px solid #585efe;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600; /* default weight */
+  cursor: pointer;
+  background-color: #f0f4ff;
+  transition: transform 0.1s, background-color 0.2s; /* remove font-weight transition */
+}
+
+
+
+/* Selected tile style */
+.bingo-tile.selected {
+  background-color: #585efe;
+  color: white;
+}

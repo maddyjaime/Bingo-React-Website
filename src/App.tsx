@@ -1,5 +1,5 @@
 //npm run dev
-// github token: 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
+
 import { useLocalStorage } from "./hooks/useLocalStorage";
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
@@ -41,10 +41,20 @@ function App() {
           <Route path="/overall-items" element={
             <OverallItems 
                   list_of_tiles={list_of_tiles}
+                  setSelectedTiles={setSelectedTiles} />} />
+
+          <Route path="/card-1" element={
+            <Card 
+                  list_of_tiles={list_of_tiles}
                   selectedTiles={selectedTiles}
                   setSelectedTiles={setSelectedTiles} />} />
-          <Route path="/card-1" element={<Card />} />
-          <Route path="/card-2" element={<Card />} />
+                  
+          
+          <Route path="/card-2" element={
+            <Card 
+                  list_of_tiles={list_of_tiles}
+                  selectedTiles={selectedTiles}
+                  setSelectedTiles={setSelectedTiles} />} />
         </Routes>
         
     

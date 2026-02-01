@@ -9,6 +9,13 @@
   background-color: #e3f2fd; /* light blue background */
 }
 
+.navbar-title-link {
+  text-decoration: none;
+  /* color: #190f9e; /* navy blue */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 /* 
 [ margin ][ border ][ padding ][ content ][ padding ][ border ][ margin ]
 */
@@ -29,7 +36,7 @@ h2.navbar-title {
 
 .navbar-link {
   text-decoration: none;
-  color: #c8c9e6; /* initial color navy blue*/
+  color: #c8c9e6; /* initial color light purple blue*/
   font-weight: bold;
 }
 

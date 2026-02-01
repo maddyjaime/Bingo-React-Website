@@ -13,7 +13,7 @@ export function ItemTile({value}: ItemTileProps) {
                 {value}
 
             <button>    
-                Click Me
+                Delete Item
 
             </button>
         </div>

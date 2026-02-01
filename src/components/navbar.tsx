@@ -6,7 +6,7 @@ import "./Navbar.css";
 export function Navbar() {
   return (
     <nav className="navbar">
-      <h2 className="navbar-title">My App</h2>
+      <NavLink className="navbar-title-link" to="/"> Bingo Home </NavLink>
 
       <ul className="navbar-ul-links">
         <li>

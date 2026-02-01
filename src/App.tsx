@@ -1,5 +1,5 @@
 //npm run dev
-
+// github token: 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
 import { useLocalStorage } from "./hooks/useLocalStorage";
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
@@ -9,6 +9,8 @@ import './App.css'
 import { Navbar } from "./components/navbar";
 import { BingoBoard } from "./components/BingoBoard";
 import { ItemList } from "./components/ItemList";
+import { OverallItems } from './pages/OverallItems';
+import { Card } from './pages/Card';
 
 function App() {
   
@@ -29,9 +31,17 @@ function App() {
 
   return (
     <>
-      <BrowserRouter> 
       
-        <Navbar/>
+        {<Navbar/>}
+           
+
+        <Routes>
+          <Route path="/" element={<h1>Home Page</h1>} />
+          <Route path="/overall-items" element={<OverallItems />} />
+          <Route path="/card-1" element={<Card />} />
+          <Route path="/card-2" element={<Card />} />
+        </Routes>
+        
     
         <h1>Bingo Below:</h1>
       
@@ -44,7 +54,7 @@ function App() {
 
         <ItemList items={list_of_tiles} setSelectedTiles={setSelectedTiles}/>
         
-      </BrowserRouter>
+     
     </>
   )
 }

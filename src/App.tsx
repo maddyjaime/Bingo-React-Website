@@ -1,4 +1,6 @@
-//npm run dev
+//to start local webpage: npm run dev
+//to run tests: npm run test
+//to run tests with UI: npm run test:ui
 
 import { useLocalStorage } from "./hooks/useLocalStorage";
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
@@ -56,9 +58,6 @@ function App() {
                   selectedTiles={selectedTiles}
                   setSelectedTiles={setSelectedTiles} />} />
         </Routes>
-        
-    
-        
         
      
     </>

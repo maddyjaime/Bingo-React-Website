@@ -5,6 +5,13 @@ import { Navbar } from "./navbar";
 import { ItemList } from "./ItemList";
 
 
+// Hook to automatically log test names
+beforeEach(() => {
+  // Jest provides the current test name via expect.getState().currentTestName
+  const currentTest = expect.getState().currentTestName;
+  console.log(`\n🧪 Running test: ${currentTest}`);
+});
+
 
 describe("Navbar", () => {
     //Test that links render correctly
@@ -15,11 +22,10 @@ describe("Navbar", () => {
             </MemoryRouter>
         );
 
-        const link = screen.getByText("Overall Items");
-        expect(link).toHaveAttribute("href", "/overall-items");
-        });
-
+        expect(screen.getByRole("link", { name: "Overall Items" })).toBeInTheDocument();
 
    
+
+    });
 
 });

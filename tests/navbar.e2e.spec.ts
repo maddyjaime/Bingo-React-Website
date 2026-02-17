@@ -9,7 +9,7 @@ test.describe("Navbar UI Navigation", () => {
     await page.goto('http://localhost:5173');
 
     // Pause here to interact with the browser manually
-    //await page.pause();
+    await page.pause();
 
     await expect(page.locator('h1')).toHaveText('Home Page');
   });

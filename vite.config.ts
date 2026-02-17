@@ -12,5 +12,9 @@ export default defineConfig({
     environment: "jsdom",
     globals: true,
     setupFiles: "./src/setupTests.ts",
+    exclude: [
+      'node_modules/**',  // 👈 add this back
+      'tests/**'  
+    ] 
   },
 } as UserConfig & { test?: VitestConfig });
